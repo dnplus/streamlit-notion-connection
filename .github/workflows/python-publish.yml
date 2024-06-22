@@ -17,7 +17,7 @@ permissions:
 
 jobs:
   deploy:
-
+    environment: Python
     runs-on: ubuntu-latest
 
     steps:
