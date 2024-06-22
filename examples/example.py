@@ -2,7 +2,7 @@ import streamlit as st
 from streamlit_notion import NotionConnection
 
 # Create connection
-conn = st.connection("notion", type=NotionConnection, notion_api_key="secret_XjBxV6Vm9gWvFoGwmZzxXefqx2g7gSeaVJiPK9l5Kq1")
+conn = st.connection("notion", type=NotionConnection)
 
 databases = conn.list_databases()
 
