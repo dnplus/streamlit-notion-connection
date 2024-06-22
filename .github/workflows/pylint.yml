@@ -17,8 +17,7 @@ jobs:
     - name: Install dependencies
       run: |
         python -m pip install --upgrade pip
-        pip install pylint
-        pip install streamlit==1.28.0 notion-client
+        pip install pylint setuptools streamlit==1.28.0 notion-client
     - name: Analysing the code with pylint
       run: |
         pylint $(git ls-files '*.py')
