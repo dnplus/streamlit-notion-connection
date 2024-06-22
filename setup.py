@@ -1,3 +1,4 @@
+""" Setup file for the package. """
 import setuptools
 
 VERSION = "0.0.1"
@@ -20,6 +21,6 @@ setuptools.setup(
     # Requirements
     install_requires=INSTALL_REQUIRES,
     packages=["streamlit_notion"],
-    long_description=open("README.md").read(),
+    long_description=open("README.md", encoding="UTF-8").read(),
     long_description_content_type="text/markdown",
 )

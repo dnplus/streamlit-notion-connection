@@ -1,3 +1,4 @@
+""" Example of using the Notion API with Streamlit """
 import streamlit as st
 from streamlit_notion import NotionConnection
 
