@@ -1,10 +1,10 @@
-from streamlit.connections import ExperimentalBaseConnection
+from streamlit.connections import BaseConnection
 from streamlit.runtime.caching import cache_data
 from notion_client import Client
 import os
 import pandas as pd
 
-class NotionConnection(ExperimentalBaseConnection[Client]):
+class NotionConnection(BaseConnection[Client]):
     def _connect(self, **kwargs) -> Client:
         if "notion_api_key" in kwargs:
             api_key = kwargs.pop("notion_api_key")

@@ -5,7 +5,7 @@ VERSION = "0.0.1"
 NAME = "st-notion-connection"
 
 INSTALL_REQUIRES = [
-    "streamlit>=1.22.0",
+    "streamlit>=1.28.0",
 ]
 
 setuptools.setup(
