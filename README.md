@@ -38,6 +38,23 @@ You can provide the Notion API key in three ways:
 2. As a secret in Streamlit's secrets management.
 3. As an environment variable `NOTION_API_KEY`.
 
+## Examples
+```python
+import streamlit as st
+from streamlit_notion import NotionConnection
+
+# Create connection
+conn = st.connection("notion", type=NotionConnection)
+
+databases = conn.list_databases()
+
+# st.write(databases)
+
+for database in databases["results"]:
+    r = conn.query(database["id"], page_size=1)
+    st.write(r)
+```
+
 ### Methods
 
 - `list_databases()`: Lists all databases in the Notion workspace.
