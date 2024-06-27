@@ -1,7 +1,7 @@
 """ Setup file for the package. """
 import setuptools
 
-VERSION = "0.0.1"
+VERSION = "0.0.2"
 
 NAME = "st-notion-connection"
 
@@ -16,7 +16,7 @@ setuptools.setup(
     name=NAME,
     version=VERSION,
     description="Streamlit Connection for Notion API.",
-    url="https://github.com/marks/streamlit-notion-connection",
+    url="https://github.com/dnplus/streamlit-notion-connection",
     author="Dylan Lu",
     author_email="dnplus@gmail.com",
     license="MIT",
